@@ -30,8 +30,14 @@ def resolve_tags(phab):
     })
 
 
-def on_task_update(phab, task_id, tag_map):
-    task = phab.maniphest.search(constraints={"ids": [task_id]}, attachments={"columns": True, "projects": True})['data'][0]
+def on_task_update(phab, task_id=None, phid=None, tag_map=None):
+    if task_id:
+        constraints = {"ids": [task_id]}
+    else:
+        constraints = {"phids": [phid]}
+
+    task = phab.maniphest.search(constraints=constraints, attachments={"columns": True, "projects": True})['data'][0]
+
     diff_phids = [edge['destinationPHID'] for edge in phab.edge.search(sourcePHIDs=[task['phid']], types=["task.revision"])['data'] if edge['edgeType'] == "task.revision"]
 
     accepted_count = 0
@@ -82,11 +88,9 @@ def on_task_update(phab, task_id, tag_map):
 
 
 if __name__ == '__main__':
-    PHABRICATOR_API_URL = os.environ['PHABRICATOR_API_URL']
-
-    phab = Phabricator(host=PHABRICATOR_API_URL)
+    phab = Phabricator(host=os.environ['PHABRICATOR_API_URL'], token=os.environ.get('PHABRICATOR_API_TOKEN'))
     phab.update_interfaces()
 
     tags = resolve_tags(phab)
 
-    on_task_update(phab, 2895, tag_map=tags)
+    on_task_update(phab, task_id=2895, tag_map=tags)
