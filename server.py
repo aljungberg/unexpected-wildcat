@@ -25,7 +25,11 @@ def receive_hook():
     detail = bottle.request.json
 
     if detail['object']['type'] == 'TASK':
-        task_tagger.on_task_update(phab, phid=detail['object']['phid'], tag_map=tag_map)
+        try:
+            task_tagger.on_task_update(phab, phid=detail['object']['phid'], tag_map=tag_map)
+        except:
+            print("Failed to process hook:\n{}".format(detail))
+            raise
 
 
 if __name__ == '__main__':
