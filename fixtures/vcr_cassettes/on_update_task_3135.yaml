@@ -1,6 +1,6 @@
 interactions:
 - request:
-    body: params=%7B%22constraints%22%3A+%7B%22name%22%3A+%22Accepted%22%7D%2C+%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%7D&output=json
+    body: output=json&params=%7B%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%2C+%22constraints%22%3A+%7B%22name%22%3A+%22Accepted%22%7D%7D
     headers:
       Content-Type: [application/x-www-form-urlencoded]
       User-Agent: [python-phabricator/1]
@@ -9,11 +9,11 @@ interactions:
   response:
     body: {string: '{"result":{"data":[{"id":181,"type":"PROJ","phid":"PHID-PROJ-72kxzxxqoak5bp2llx3m","fields":{"name":"Accepted","slug":"accepted","milestone":null,"depth":0,"parent":null,"icon":{"key":"tag","name":"Tag","icon":"fa-tags"},"color":{"key":"green","name":"Green"},"dateCreated":1518712842,"dateModified":1518712842,"policy":{"view":"users","edit":"users","join":"users"},"description":null},"attachments":{}}],"maps":{"slugMap":{}},"query":{"queryKey":null},"cursor":{"limit":100,"after":null,"before":null,"order":null}},"error_code":null,"error_info":null}'}
     headers:
-      CF-RAY: [3f15c343a809357e-LHR]
+      CF-RAY: [3f15c72e1f9e35d2-LHR]
       Cache-Control: [no-store]
       Connection: [keep-alive]
       Content-Type: [application/json]
-      Date: ['Thu, 22 Feb 2018 23:35:37 GMT']
+      Date: ['Thu, 22 Feb 2018 23:38:17 GMT']
       Expect-CT: ['max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"']
       Expires: ['Sat, 01 Jan 2000 00:00:00 GMT']
       Server: [cloudflare]
@@ -24,7 +24,7 @@ interactions:
       X-Powered-By: [PHP/5.5.9-1ubuntu4.23]
     status: {code: 200, message: OK}
 - request:
-    body: params=%7B%22constraints%22%3A+%7B%22name%22%3A+%22Diff%22%7D%2C+%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%7D&output=json
+    body: output=json&params=%7B%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%2C+%22constraints%22%3A+%7B%22name%22%3A+%22Diff%22%7D%7D
     headers:
       Content-Type: [application/x-www-form-urlencoded]
       User-Agent: [python-phabricator/1]
@@ -33,11 +33,11 @@ interactions:
   response:
     body: {string: '{"result":{"data":[{"id":183,"type":"PROJ","phid":"PHID-PROJ-segawqxql2j3qedl7cqc","fields":{"name":"Diff","slug":"diff","milestone":null,"depth":0,"parent":null,"icon":{"key":"tag","name":"Tag","icon":"fa-tags"},"color":{"key":"yellow","name":"Yellow"},"dateCreated":1518712912,"dateModified":1518818610,"policy":{"view":"users","edit":"users","join":"users"},"description":null},"attachments":{}}],"maps":{"slugMap":{}},"query":{"queryKey":null},"cursor":{"limit":100,"after":null,"before":null,"order":null}},"error_code":null,"error_info":null}'}
     headers:
-      CF-RAY: [3f15c34c2f9a35ba-LHR]
+      CF-RAY: [3f15c735ee4735cc-LHR]
       Cache-Control: [no-store]
       Connection: [keep-alive]
       Content-Type: [application/json]
-      Date: ['Thu, 22 Feb 2018 23:35:38 GMT']
+      Date: ['Thu, 22 Feb 2018 23:38:18 GMT']
       Expect-CT: ['max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"']
       Expires: ['Sat, 01 Jan 2000 00:00:00 GMT']
       Server: [cloudflare]
@@ -48,7 +48,7 @@ interactions:
       X-Powered-By: [PHP/5.5.9-1ubuntu4.23]
     status: {code: 200, message: OK}
 - request:
-    body: params=%7B%22constraints%22%3A+%7B%22name%22%3A+%22Landed%22%7D%2C+%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%7D&output=json
+    body: output=json&params=%7B%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%2C+%22constraints%22%3A+%7B%22name%22%3A+%22Landed%22%7D%7D
     headers:
       Content-Type: [application/x-www-form-urlencoded]
       User-Agent: [python-phabricator/1]
@@ -57,11 +57,11 @@ interactions:
   response:
     body: {string: '{"result":{"data":[{"id":186,"type":"PROJ","phid":"PHID-PROJ-t2mvgyqoolxpakgeyngn","fields":{"name":"Landed","slug":"landed","milestone":null,"depth":0,"parent":null,"icon":{"key":"goal","name":"Goal","icon":"fa-flag-checkered"},"color":{"key":"green","name":"Green"},"dateCreated":1519342093,"dateModified":1519342093,"policy":{"view":"users","edit":"users","join":"users"},"description":null},"attachments":{}}],"maps":{"slugMap":{}},"query":{"queryKey":null},"cursor":{"limit":100,"after":null,"before":null,"order":null}},"error_code":null,"error_info":null}'}
     headers:
-      CF-RAY: [3f15c355298a34be-LHR]
+      CF-RAY: [3f15c73dcfb53452-LHR]
       Cache-Control: [no-store]
       Connection: [keep-alive]
       Content-Type: [application/json]
-      Date: ['Thu, 22 Feb 2018 23:35:39 GMT']
+      Date: ['Thu, 22 Feb 2018 23:38:20 GMT']
       Expect-CT: ['max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"']
       Expires: ['Sat, 01 Jan 2000 00:00:00 GMT']
       Server: [cloudflare]
@@ -72,7 +72,7 @@ interactions:
       X-Powered-By: [PHP/5.5.9-1ubuntu4.23]
     status: {code: 200, message: OK}
 - request:
-    body: params=%7B%22constraints%22%3A+%7B%22name%22%3A+%22Reviewed%22%7D%2C+%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%7D&output=json
+    body: output=json&params=%7B%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%2C+%22constraints%22%3A+%7B%22name%22%3A+%22Reviewed%22%7D%7D
     headers:
       Content-Type: [application/x-www-form-urlencoded]
       User-Agent: [python-phabricator/1]
@@ -81,11 +81,11 @@ interactions:
   response:
     body: {string: '{"result":{"data":[{"id":182,"type":"PROJ","phid":"PHID-PROJ-kx4rkibaeu6rt72oupll","fields":{"name":"Reviewed","slug":"reviewed","milestone":null,"depth":0,"parent":null,"icon":{"key":"tag","name":"Tag","icon":"fa-tags"},"color":{"key":"red","name":"Red"},"dateCreated":1518712888,"dateModified":1518712888,"policy":{"view":"users","edit":"users","join":"users"},"description":null},"attachments":{}}],"maps":{"slugMap":{}},"query":{"queryKey":null},"cursor":{"limit":100,"after":null,"before":null,"order":null}},"error_code":null,"error_info":null}'}
     headers:
-      CF-RAY: [3f15c35a2ed335fc-LHR]
+      CF-RAY: [3f15c7473b7b34be-LHR]
       Cache-Control: [no-store]
       Connection: [keep-alive]
       Content-Type: [application/json]
-      Date: ['Thu, 22 Feb 2018 23:35:41 GMT']
+      Date: ['Thu, 22 Feb 2018 23:38:22 GMT']
       Expect-CT: ['max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"']
       Expires: ['Sat, 01 Jan 2000 00:00:00 GMT']
       Server: [cloudflare]
@@ -96,40 +96,29 @@ interactions:
       X-Powered-By: [PHP/5.5.9-1ubuntu4.23]
     status: {code: 200, message: OK}
 - request:
-    body: output=json&params=%7B%22attachments%22%3A+%7B%22projects%22%3A+true%2C+%22columns%22%3A+true%7D%2C+%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%2C+%22constraints%22%3A+%7B%22ids%22%3A+%5B3073%5D%7D%7D
+    body: output=json&params=%7B%22attachments%22%3A+%7B%22columns%22%3A+true%2C+%22projects%22%3A+true%7D%2C+%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%2C+%22constraints%22%3A+%7B%22ids%22%3A+%5B3135%5D%7D%7D
     headers:
       Content-Type: [application/x-www-form-urlencoded]
       User-Agent: [python-phabricator/1]
     method: POST
     uri: https://truecode.trueship.com/api/maniphest.search
   response:
-    body: {string: '{"result":{"data":[{"id":3073,"type":"TASK","phid":"PHID-TASK-6mh4up4avtz2wjr2a2sd","fields":{"name":"collect
-        celery crash data with flower","description":{"raw":"**Description**\nCelery
-        has been intermittently and intermittently stopping for shopify in the past
-        month, causing the app to cease working and business disruptions for all users.
-        We need to prevent it from doing so (see T3050), but to do so, we need to
-        figure out what is actually causing the crashes. The best way to do this will
-        be to collect as much data as possible when (if) celery stops again. We are
-        installing flower (see T3049) to monitor celery for shopify and provide data
-        on celery. We should use this to collect data in the event of a stoppage.\n\n**Acceptance
-        Criteria**\nSee Giuseppe''s comment. Not sure right now. Collect everything
-        you can through flower if\/when there is a crash, anything that seems relevant
-        or interesting to you\n\n**Resources**\nSee the following related tasks:\nT3049
-        - flower install\nT3050 - celery crash\n\n**Notes**\n- This task only covers
-        collection of the celery crash data, not the analysis. Hence the 1 point complexity.
-        Analysis will come later, and hopefully give us what we need to estimate and
-        fix T3050\n- In the event that no stoppage happens during this sprint (sprint
-        15), we can mark this done, and disregard it (in the event a stoppage happens
-        later, we can collect data and reopen this ticket)"},"authorPHID":"PHID-USER-rbmakob2u5heiub2dckt","ownerPHID":null,"status":{"value":"open","name":"Open","color":null},"priority":{"value":90,"subpriority":0,"name":"Needs
-        Triage","color":"violet"},"points":"1","subtype":"default","closerPHID":null,"dateClosed":null,"spacePHID":"PHID-SPCE-f6z3tzwer76orrxduf4u","dateCreated":1516205886,"dateModified":1518800772,"policy":{"view":"users","interact":"users","edit":"users"}},"attachments":{"projects":{"projectPHIDs":["PHID-PROJ-segawqxql2j3qedl7cqc","PHID-PROJ-4ifm4xnvp6ip4ahhetvu","PHID-PROJ-xen4wfamjfa4qt4ccnyw","PHID-PROJ-oh37f4rlhg5kpfmywbh2"]},"columns":{"boards":{"PHID-PROJ-4ifm4xnvp6ip4ahhetvu":{"columns":[{"id":907,"phid":"PHID-PCOL-ieqdkcdc5xuyshmm6aqz","name":"Sprint
-        Backlog"}]},"PHID-PROJ-xen4wfamjfa4qt4ccnyw":{"columns":[{"id":429,"phid":"PHID-PCOL-jmoupob7l23qrqv2blgq","name":"Backlog"}]},"PHID-PROJ-oh37f4rlhg5kpfmywbh2":{"columns":[{"id":913,"phid":"PHID-PCOL-eoourq566zvhfjbqqqcn","name":"Sprint
-        17"}]}}}}}],"maps":{},"query":{"queryKey":null},"cursor":{"limit":100,"after":null,"before":null,"order":null}},"error_code":null,"error_info":null}'}
+    body: {string: '{"result":{"data":[{"id":3135,"type":"TASK","phid":"PHID-TASK-zjxys23b7zuuojohnfrl","fields":{"name":"Make
+        BigCommerce logging (GL) useable","description":{"raw":"From [[ https:\/\/www.flowdock.com\/app\/trueship\/apps\/threads\/UUQHGJtp5W-I7E_zQXdW_8T4n5a
+        | this thread ]], @gcicalini noticed that BC logging to GL is totally flawed
+        and completely unusable- said this should be outstanding priority over all
+        other BC features. The source in GL is a random string of gibberish. Additionally,
+        some logs are only in the container, and so are lost forever when we deploy.
+        These problems need to be fixed"},"authorPHID":"PHID-USER-rbmakob2u5heiub2dckt","ownerPHID":"PHID-USER-7fyatlmpgidzxhovnsbl","status":{"value":"open","name":"Open","color":null},"priority":{"value":90,"subpriority":0,"name":"Needs
+        Triage","color":"violet"},"points":"1","subtype":"default","closerPHID":null,"dateClosed":null,"spacePHID":"PHID-SPCE-f6z3tzwer76orrxduf4u","dateCreated":1517346348,"dateModified":1518818850,"policy":{"view":"users","interact":"users","edit":"users"}},"attachments":{"columns":{"boards":{"PHID-PROJ-4ifm4xnvp6ip4ahhetvu":{"columns":[{"id":911,"phid":"PHID-PCOL-ce2yr5rbn3up7bgpsaop","name":"To
+        Deploy"}]},"PHID-PROJ-uqzdtbif7qhzjqb6zr4w":{"columns":[{"id":460,"phid":"PHID-PCOL-bxlu2pwf4aclml42mpos","name":"Backlog"}]},"PHID-PROJ-oh37f4rlhg5kpfmywbh2":{"columns":[{"id":913,"phid":"PHID-PCOL-eoourq566zvhfjbqqqcn","name":"Sprint
+        17"}]}}},"projects":{"projectPHIDs":["PHID-PROJ-segawqxql2j3qedl7cqc","PHID-PROJ-4ifm4xnvp6ip4ahhetvu","PHID-PROJ-uqzdtbif7qhzjqb6zr4w","PHID-PROJ-oh37f4rlhg5kpfmywbh2"]}}}],"maps":{},"query":{"queryKey":null},"cursor":{"limit":100,"after":null,"before":null,"order":null}},"error_code":null,"error_info":null}'}
     headers:
-      CF-RAY: [3ee21cb91d0035e4-LHR]
+      CF-RAY: [3f15c7523b3f344c-LHR]
       Cache-Control: [no-store]
       Connection: [keep-alive]
       Content-Type: [application/json]
-      Date: ['Fri, 16 Feb 2018 17:09:01 GMT']
+      Date: ['Thu, 22 Feb 2018 23:38:23 GMT']
       Expect-CT: ['max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"']
       Expires: ['Sat, 01 Jan 2000 00:00:00 GMT']
       Server: [cloudflare]
@@ -140,20 +129,20 @@ interactions:
       X-Powered-By: [PHP/5.5.9-1ubuntu4.23]
     status: {code: 200, message: OK}
 - request:
-    body: output=json&params=%7B%22sourcePHIDs%22%3A+%5B%22PHID-TASK-6mh4up4avtz2wjr2a2sd%22%5D%2C+%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%2C+%22types%22%3A+%5B%22task.revision%22%5D%7D
+    body: output=json&params=%7B%22types%22%3A+%5B%22task.revision%22%5D%2C+%22sourcePHIDs%22%3A+%5B%22PHID-TASK-zjxys23b7zuuojohnfrl%22%5D%2C+%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%7D
     headers:
       Content-Type: [application/x-www-form-urlencoded]
       User-Agent: [python-phabricator/1]
     method: POST
     uri: https://truecode.trueship.com/api/edge.search
   response:
-    body: {string: '{"result":{"data":[],"cursor":{"limit":100,"after":null,"before":null}},"error_code":null,"error_info":null}'}
+    body: {string: '{"result":{"data":[{"sourcePHID":"PHID-TASK-zjxys23b7zuuojohnfrl","edgeType":"task.revision","destinationPHID":"PHID-DREV-ho6mpcwndp5cibqcqtnf"}],"cursor":{"limit":100,"after":null,"before":null}},"error_code":null,"error_info":null}'}
     headers:
-      CF-RAY: [3ee21cbffca334d0-LHR]
+      CF-RAY: [3f15c75b28353542-LHR]
       Cache-Control: [no-store]
       Connection: [keep-alive]
       Content-Type: [application/json]
-      Date: ['Fri, 16 Feb 2018 17:09:03 GMT']
+      Date: ['Thu, 22 Feb 2018 23:38:24 GMT']
       Expect-CT: ['max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"']
       Expires: ['Sat, 01 Jan 2000 00:00:00 GMT']
       Server: [cloudflare]
@@ -164,20 +153,50 @@ interactions:
       X-Powered-By: [PHP/5.5.9-1ubuntu4.23]
     status: {code: 200, message: OK}
 - request:
-    body: output=json&params=%7B%22objectIdentifier%22%3A+%22PHID-TASK-6mh4up4avtz2wjr2a2sd%22%2C+%22transactions%22%3A+%5B%7B%22type%22%3A+%22projects.remove%22%2C+%22value%22%3A+%5B%22PHID-PROJ-segawqxql2j3qedl7cqc%22%5D%7D%5D%2C+%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%7D
+    body: output=json&params=%7B%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%2C+%22constraints%22%3A+%7B%22phids%22%3A+%5B%22PHID-DREV-ho6mpcwndp5cibqcqtnf%22%5D%7D%7D
+    headers:
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-phabricator/1]
+    method: POST
+    uri: https://truecode.trueship.com/api/differential.revision.search
+  response:
+    body: {string: '{"result":{"data":[{"id":4363,"type":"DREV","phid":"PHID-DREV-ho6mpcwndp5cibqcqtnf","fields":{"title":"Make
+        BigCommerce logging (GL) useable","authorPHID":"PHID-USER-7fyatlmpgidzxhovnsbl","status":{"value":"published","name":"Closed","closed":true,"color.ansi":"cyan"},"repositoryPHID":"PHID-REPO-gpgbclnawmhuq5mskoa6","diffPHID":"PHID-DIFF-opilc44xe2sto2gf6ij5","summary":"Fix
+        for https:\/\/truecode.trueship.com\/T3135.\n\nBigCommerce Logging was not
+        useable;\n1. The \"source\" field is graylog was gibberish.\n**Solution**:
+        The source field was the docker container ID. Fixed in diff https:\/\/truecode.trueship.com\/D4274
+        \n2. Some logs appear in console but not in graylog\n**Solution**: Changed
+        log level to debug for ''graypy'' log handler.","dateCreated":1517984711,"dateModified":1518655412,"policy":{"view":"PHID-PROJ-2zg46vukl72wslzcv3gt","edit":"PHID-PROJ-2zg46vukl72wslzcv3gt"}},"attachments":{}}],"maps":{},"query":{"queryKey":null},"cursor":{"limit":100,"after":null,"before":null,"order":null}},"error_code":null,"error_info":null}'}
+    headers:
+      CF-RAY: [3f15c75f7e37356c-LHR]
+      Cache-Control: [no-store]
+      Connection: [keep-alive]
+      Content-Type: [application/json]
+      Date: ['Thu, 22 Feb 2018 23:38:25 GMT']
+      Expect-CT: ['max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"']
+      Expires: ['Sat, 01 Jan 2000 00:00:00 GMT']
+      Server: [cloudflare]
+      Strict-Transport-Security: [max-age=0; includeSubdomains; preload]
+      Vary: [Accept-Encoding]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [Deny]
+      X-Powered-By: [PHP/5.5.9-1ubuntu4.23]
+    status: {code: 200, message: OK}
+- request:
+    body: output=json&params=%7B%22transactions%22%3A+%5B%7B%22type%22%3A+%22projects.add%22%2C+%22value%22%3A+%5B%22PHID-PROJ-t2mvgyqoolxpakgeyngn%22%5D%7D%2C+%7B%22type%22%3A+%22projects.remove%22%2C+%22value%22%3A+%5B%22PHID-PROJ-segawqxql2j3qedl7cqc%22%5D%7D%5D%2C+%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%2C+%22objectIdentifier%22%3A+%22PHID-TASK-zjxys23b7zuuojohnfrl%22%7D
     headers:
       Content-Type: [application/x-www-form-urlencoded]
       User-Agent: [python-phabricator/1]
     method: POST
     uri: https://truecode.trueship.com/api/maniphest.edit
   response:
-    body: {string: '{"result":{"object":{"id":"3073","phid":"PHID-TASK-6mh4up4avtz2wjr2a2sd"},"transactions":[{"phid":"PHID-XACT-TASK-h4e4uoeyknaoqfy"}]},"error_code":null,"error_info":null}'}
+    body: {string: '{"result":{"object":{"id":"3135","phid":"PHID-TASK-zjxys23b7zuuojohnfrl"},"transactions":[{"phid":"PHID-XACT-TASK-aw7jyli3cu5ykru"}]},"error_code":null,"error_info":null}'}
     headers:
-      CF-RAY: [3ee21cc7a86535ba-LHR]
+      CF-RAY: [3f15c7664f363590-LHR]
       Cache-Control: [no-store]
       Connection: [keep-alive]
       Content-Type: [application/json]
-      Date: ['Fri, 16 Feb 2018 17:09:05 GMT']
+      Date: ['Thu, 22 Feb 2018 23:38:27 GMT']
       Expect-CT: ['max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"']
       Expires: ['Sat, 01 Jan 2000 00:00:00 GMT']
       Server: [cloudflare]
