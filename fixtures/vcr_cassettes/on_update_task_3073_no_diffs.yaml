@@ -1,0 +1,166 @@
+interactions:
+- request:
+    body: output=json&params=%7B%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%2C+%22constraints%22%3A+%7B%22name%22%3A+%22Accepted%22%7D%7D
+    headers:
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-phabricator/1]
+    method: POST
+    uri: https://truecode.trueship.com/api/project.search
+  response:
+    body: {string: '{"result":{"data":[{"id":181,"type":"PROJ","phid":"PHID-PROJ-72kxzxxqoak5bp2llx3m","fields":{"name":"Accepted","slug":"accepted","milestone":null,"depth":0,"parent":null,"icon":{"key":"tag","name":"Tag","icon":"fa-tags"},"color":{"key":"green","name":"Green"},"dateCreated":1518712842,"dateModified":1518712842,"policy":{"view":"users","edit":"users","join":"users"},"description":null},"attachments":{}}],"maps":{"slugMap":{}},"query":{"queryKey":null},"cursor":{"limit":100,"after":null,"before":null,"order":null}},"error_code":null,"error_info":null}'}
+    headers:
+      CF-RAY: [3ee21ca7be9635cc-LHR]
+      Cache-Control: [no-store]
+      Connection: [keep-alive]
+      Content-Type: [application/json]
+      Date: ['Fri, 16 Feb 2018 17:08:58 GMT']
+      Expect-CT: ['max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"']
+      Expires: ['Sat, 01 Jan 2000 00:00:00 GMT']
+      Server: [cloudflare]
+      Strict-Transport-Security: [max-age=0; includeSubdomains; preload]
+      Vary: [Accept-Encoding]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [Deny]
+      X-Powered-By: [PHP/5.5.9-1ubuntu4.23]
+    status: {code: 200, message: OK}
+- request:
+    body: output=json&params=%7B%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%2C+%22constraints%22%3A+%7B%22name%22%3A+%22Reviewed%22%7D%7D
+    headers:
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-phabricator/1]
+    method: POST
+    uri: https://truecode.trueship.com/api/project.search
+  response:
+    body: {string: '{"result":{"data":[{"id":182,"type":"PROJ","phid":"PHID-PROJ-kx4rkibaeu6rt72oupll","fields":{"name":"Reviewed","slug":"reviewed","milestone":null,"depth":0,"parent":null,"icon":{"key":"tag","name":"Tag","icon":"fa-tags"},"color":{"key":"red","name":"Red"},"dateCreated":1518712888,"dateModified":1518712888,"policy":{"view":"users","edit":"users","join":"users"},"description":null},"attachments":{}}],"maps":{"slugMap":{}},"query":{"queryKey":null},"cursor":{"limit":100,"after":null,"before":null,"order":null}},"error_code":null,"error_info":null}'}
+    headers:
+      CF-RAY: [3ee21cac989634be-LHR]
+      Cache-Control: [no-store]
+      Connection: [keep-alive]
+      Content-Type: [application/json]
+      Date: ['Fri, 16 Feb 2018 17:08:59 GMT']
+      Expect-CT: ['max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"']
+      Expires: ['Sat, 01 Jan 2000 00:00:00 GMT']
+      Server: [cloudflare]
+      Strict-Transport-Security: [max-age=0; includeSubdomains; preload]
+      Vary: [Accept-Encoding]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [Deny]
+      X-Powered-By: [PHP/5.5.9-1ubuntu4.23]
+    status: {code: 200, message: OK}
+- request:
+    body: output=json&params=%7B%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%2C+%22constraints%22%3A+%7B%22name%22%3A+%22Diff%22%7D%7D
+    headers:
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-phabricator/1]
+    method: POST
+    uri: https://truecode.trueship.com/api/project.search
+  response:
+    body: {string: '{"result":{"data":[{"id":183,"type":"PROJ","phid":"PHID-PROJ-segawqxql2j3qedl7cqc","fields":{"name":"Diff","slug":"diff","milestone":null,"depth":0,"parent":null,"icon":{"key":"tag","name":"Tag","icon":"fa-tags"},"color":{"key":"grey","name":"Grey"},"dateCreated":1518712912,"dateModified":1518712912,"policy":{"view":"users","edit":"users","join":"users"},"description":null},"attachments":{}}],"maps":{"slugMap":{}},"query":{"queryKey":null},"cursor":{"limit":100,"after":null,"before":null,"order":null}},"error_code":null,"error_info":null}'}
+    headers:
+      CF-RAY: [3ee21cb4384a3500-LHR]
+      Cache-Control: [no-store]
+      Connection: [keep-alive]
+      Content-Type: [application/json]
+      Date: ['Fri, 16 Feb 2018 17:09:00 GMT']
+      Expect-CT: ['max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"']
+      Expires: ['Sat, 01 Jan 2000 00:00:00 GMT']
+      Server: [cloudflare]
+      Strict-Transport-Security: [max-age=0; includeSubdomains; preload]
+      Vary: [Accept-Encoding]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [Deny]
+      X-Powered-By: [PHP/5.5.9-1ubuntu4.23]
+    status: {code: 200, message: OK}
+- request:
+    body: output=json&params=%7B%22attachments%22%3A+%7B%22projects%22%3A+true%2C+%22columns%22%3A+true%7D%2C+%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%2C+%22constraints%22%3A+%7B%22ids%22%3A+%5B3073%5D%7D%7D
+    headers:
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-phabricator/1]
+    method: POST
+    uri: https://truecode.trueship.com/api/maniphest.search
+  response:
+    body: {string: '{"result":{"data":[{"id":3073,"type":"TASK","phid":"PHID-TASK-6mh4up4avtz2wjr2a2sd","fields":{"name":"collect
+        celery crash data with flower","description":{"raw":"**Description**\nCelery
+        has been intermittently and intermittently stopping for shopify in the past
+        month, causing the app to cease working and business disruptions for all users.
+        We need to prevent it from doing so (see T3050), but to do so, we need to
+        figure out what is actually causing the crashes. The best way to do this will
+        be to collect as much data as possible when (if) celery stops again. We are
+        installing flower (see T3049) to monitor celery for shopify and provide data
+        on celery. We should use this to collect data in the event of a stoppage.\n\n**Acceptance
+        Criteria**\nSee Giuseppe''s comment. Not sure right now. Collect everything
+        you can through flower if\/when there is a crash, anything that seems relevant
+        or interesting to you\n\n**Resources**\nSee the following related tasks:\nT3049
+        - flower install\nT3050 - celery crash\n\n**Notes**\n- This task only covers
+        collection of the celery crash data, not the analysis. Hence the 1 point complexity.
+        Analysis will come later, and hopefully give us what we need to estimate and
+        fix T3050\n- In the event that no stoppage happens during this sprint (sprint
+        15), we can mark this done, and disregard it (in the event a stoppage happens
+        later, we can collect data and reopen this ticket)"},"authorPHID":"PHID-USER-rbmakob2u5heiub2dckt","ownerPHID":null,"status":{"value":"open","name":"Open","color":null},"priority":{"value":90,"subpriority":0,"name":"Needs
+        Triage","color":"violet"},"points":"1","subtype":"default","closerPHID":null,"dateClosed":null,"spacePHID":"PHID-SPCE-f6z3tzwer76orrxduf4u","dateCreated":1516205886,"dateModified":1518800772,"policy":{"view":"users","interact":"users","edit":"users"}},"attachments":{"projects":{"projectPHIDs":["PHID-PROJ-segawqxql2j3qedl7cqc","PHID-PROJ-4ifm4xnvp6ip4ahhetvu","PHID-PROJ-xen4wfamjfa4qt4ccnyw","PHID-PROJ-oh37f4rlhg5kpfmywbh2"]},"columns":{"boards":{"PHID-PROJ-4ifm4xnvp6ip4ahhetvu":{"columns":[{"id":907,"phid":"PHID-PCOL-ieqdkcdc5xuyshmm6aqz","name":"Sprint
+        Backlog"}]},"PHID-PROJ-xen4wfamjfa4qt4ccnyw":{"columns":[{"id":429,"phid":"PHID-PCOL-jmoupob7l23qrqv2blgq","name":"Backlog"}]},"PHID-PROJ-oh37f4rlhg5kpfmywbh2":{"columns":[{"id":913,"phid":"PHID-PCOL-eoourq566zvhfjbqqqcn","name":"Sprint
+        17"}]}}}}}],"maps":{},"query":{"queryKey":null},"cursor":{"limit":100,"after":null,"before":null,"order":null}},"error_code":null,"error_info":null}'}
+    headers:
+      CF-RAY: [3ee21cb91d0035e4-LHR]
+      Cache-Control: [no-store]
+      Connection: [keep-alive]
+      Content-Type: [application/json]
+      Date: ['Fri, 16 Feb 2018 17:09:01 GMT']
+      Expect-CT: ['max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"']
+      Expires: ['Sat, 01 Jan 2000 00:00:00 GMT']
+      Server: [cloudflare]
+      Strict-Transport-Security: [max-age=0; includeSubdomains; preload]
+      Vary: [Accept-Encoding]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [Deny]
+      X-Powered-By: [PHP/5.5.9-1ubuntu4.23]
+    status: {code: 200, message: OK}
+- request:
+    body: output=json&params=%7B%22sourcePHIDs%22%3A+%5B%22PHID-TASK-6mh4up4avtz2wjr2a2sd%22%5D%2C+%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%2C+%22types%22%3A+%5B%22task.revision%22%5D%7D
+    headers:
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-phabricator/1]
+    method: POST
+    uri: https://truecode.trueship.com/api/edge.search
+  response:
+    body: {string: '{"result":{"data":[],"cursor":{"limit":100,"after":null,"before":null}},"error_code":null,"error_info":null}'}
+    headers:
+      CF-RAY: [3ee21cbffca334d0-LHR]
+      Cache-Control: [no-store]
+      Connection: [keep-alive]
+      Content-Type: [application/json]
+      Date: ['Fri, 16 Feb 2018 17:09:03 GMT']
+      Expect-CT: ['max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"']
+      Expires: ['Sat, 01 Jan 2000 00:00:00 GMT']
+      Server: [cloudflare]
+      Strict-Transport-Security: [max-age=0; includeSubdomains; preload]
+      Vary: [Accept-Encoding]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [Deny]
+      X-Powered-By: [PHP/5.5.9-1ubuntu4.23]
+    status: {code: 200, message: OK}
+- request:
+    body: output=json&params=%7B%22objectIdentifier%22%3A+%22PHID-TASK-6mh4up4avtz2wjr2a2sd%22%2C+%22transactions%22%3A+%5B%7B%22type%22%3A+%22projects.remove%22%2C+%22value%22%3A+%5B%22PHID-PROJ-segawqxql2j3qedl7cqc%22%5D%7D%5D%2C+%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%7D
+    headers:
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-phabricator/1]
+    method: POST
+    uri: https://truecode.trueship.com/api/maniphest.edit
+  response:
+    body: {string: '{"result":{"object":{"id":"3073","phid":"PHID-TASK-6mh4up4avtz2wjr2a2sd"},"transactions":[{"phid":"PHID-XACT-TASK-h4e4uoeyknaoqfy"}]},"error_code":null,"error_info":null}'}
+    headers:
+      CF-RAY: [3ee21cc7a86535ba-LHR]
+      Cache-Control: [no-store]
+      Connection: [keep-alive]
+      Content-Type: [application/json]
+      Date: ['Fri, 16 Feb 2018 17:09:05 GMT']
+      Expect-CT: ['max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"']
+      Expires: ['Sat, 01 Jan 2000 00:00:00 GMT']
+      Server: [cloudflare]
+      Strict-Transport-Security: [max-age=0; includeSubdomains; preload]
+      Vary: [Accept-Encoding]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [Deny]
+      X-Powered-By: [PHP/5.5.9-1ubuntu4.23]
+    status: {code: 200, message: OK}
+version: 1

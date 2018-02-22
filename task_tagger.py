@@ -43,7 +43,7 @@ def on_task_update(phab, task_id=None, phid=None, tag_map=None):
 
     accepted_count = 0
     needs_revision_count = 0
-    diffs = phab.differential.revision.search(constraints={"phids": diff_phids})['data']
+    diffs = phab.differential.revision.search(constraints={"phids": diff_phids})['data'] if diff_phids else []
 
     for diff in diffs:
         if diff['fields']['status']['value'] == 'accepted':
