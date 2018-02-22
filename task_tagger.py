@@ -1,4 +1,5 @@
 import os
+from collections import Counter
 
 from phabricator import Phabricator
 
@@ -25,8 +26,9 @@ class TagMap:
 def resolve_tags(phab):
     return TagMap({
         'has_accepted_diff_tag': phab.project.search(constraints={"name": "Accepted"})['data'][0],
-        'has_revision_required_diff_tag': phab.project.search(constraints={"name": "Reviewed"})['data'][0],
         'has_diff_tag': phab.project.search(constraints={"name": "Diff"})['data'][0],
+        'has_landed_diff_tag': phab.project.search(constraints={"name": "Landed"})['data'][0],
+        'has_revision_required_diff_tag': phab.project.search(constraints={"name": "Reviewed"})['data'][0],
     })
 
 
@@ -40,36 +42,25 @@ def on_task_update(phab, task_id=None, phid=None, tag_map=None):
 
     diff_phids = [edge['destinationPHID'] for edge in phab.edge.search(sourcePHIDs=[task['phid']], types=["task.revision"])['data'] if edge['edgeType'] == "task.revision"]
 
-    accepted_count = 0
-    needs_revision_count = 0
     diffs = phab.differential.revision.search(constraints={"phids": diff_phids})['data'] if diff_phids else []
-
-    for diff in diffs:
-        if diff['fields']['status']['value'] == 'accepted':
-            accepted_count += 1
-        elif diff['fields']['status']['value'] == 'needs-revision':
-            needs_revision_count += 1
+    tags_counter = Counter([diff['fields']['status']['value'] for diff in diffs])
 
     all_tags = {project for project in task['attachments']['projects']['projectPHIDs']}
     my_tags = all_tags.intersection({tag['phid'] for tag in tag_map.values()})
     new_tags = set()
 
-    if diffs:
-        if accepted_count:
-            new_tags.add(tag_map['has_accepted_diff_tag'])
-        else:
-            new_tags.discard(tag_map['has_accepted_diff_tag'])
+    if tags_counter['accepted']:
+        new_tags.add(tag_map['has_accepted_diff_tag'])
 
-        if needs_revision_count:
-            new_tags.add(tag_map['has_revision_required_diff_tag'])
-        else:
-            new_tags.discard(tag_map['has_revision_required_diff_tag'])
+    if tags_counter['needs-revision']:
+        new_tags.add(tag_map['has_revision_required_diff_tag'])
 
-        if not new_tags:
-            # If neither accepted nor reviewed, at least reveal that there is a diff.
-            new_tags.add(tag_map['has_diff_tag'])
-        else:
-            new_tags.discard(tag_map['has_diff_tag'])
+    if tags_counter['published']:
+        new_tags.add(tag_map['has_landed_diff_tag'])
+
+    if diffs and not new_tags:
+        # If neither accepted nor reviewed, at least reveal that there is a diff.
+        new_tags.add(tag_map['has_diff_tag'])
 
     transactions = []
 
