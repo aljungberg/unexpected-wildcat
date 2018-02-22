@@ -2,7 +2,7 @@ import re
 import os
 
 import vcr
-from nose.tools import eq_, ok_
+from nose.tools import eq_
 from phabricator import Phabricator
 
 from task_tagger import resolve_tags, on_task_update
@@ -25,6 +25,7 @@ my_vcr = vcr.VCR(
     before_record_request=before_record_cb,
     before_record_response=before_record_response,
 )
+
 
 @my_vcr.use_cassette('fixtures/vcr_cassettes/resolve_tags.yaml')
 def test_resolve_tags__should_find_standard_tags():

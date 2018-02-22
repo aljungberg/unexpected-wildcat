@@ -1,0 +1,12 @@
+{
+  "linters": {
+    "Python linting": {
+      "type": "flake8",
+      "include": "(\\.py$)",
+      "exclude": [],
+      "severity": {
+        "E501": "disabled"
+      }
+    }
+  }
+}

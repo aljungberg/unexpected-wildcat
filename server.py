@@ -1,4 +1,3 @@
-import json
 import os
 
 from bottle import post, run
