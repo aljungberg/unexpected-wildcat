@@ -1,0 +1,179 @@
+interactions:
+- request:
+    body: params=%7B%22constraints%22%3A+%7B%22name%22%3A+%22Accepted%22%7D%2C+%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%7D&output=json
+    headers:
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-phabricator/1]
+    method: POST
+    uri: https://truecode.trueship.com/api/project.search
+  response:
+    body: {string: '{"result":{"data":[{"id":181,"type":"PROJ","phid":"PHID-PROJ-72kxzxxqoak5bp2llx3m","fields":{"name":"Accepted","slug":"accepted","milestone":null,"depth":0,"parent":null,"icon":{"key":"tag","name":"Tag","icon":"fa-tags"},"color":{"key":"green","name":"Green"},"dateCreated":1518712842,"dateModified":1518712842,"policy":{"view":"users","edit":"users","join":"users"},"description":null},"attachments":{}}],"maps":{"slugMap":{}},"query":{"queryKey":null},"cursor":{"limit":100,"after":null,"before":null,"order":null}},"error_code":null,"error_info":null}'}
+    headers:
+      CF-RAY: [3eda956458de3596-LHR]
+      Cache-Control: [no-store]
+      Connection: [keep-alive]
+      Content-Type: [application/json]
+      Date: ['Thu, 15 Feb 2018 19:13:18 GMT']
+      Expect-CT: ['max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"']
+      Expires: ['Sat, 01 Jan 2000 00:00:00 GMT']
+      Server: [cloudflare]
+      Strict-Transport-Security: [max-age=0; includeSubdomains; preload]
+      Vary: [Accept-Encoding]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [Deny]
+      X-Powered-By: [PHP/5.5.9-1ubuntu4.23]
+    status: {code: 200, message: OK}
+- request:
+    body: params=%7B%22constraints%22%3A+%7B%22name%22%3A+%22Reviewed%22%7D%2C+%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%7D&output=json
+    headers:
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-phabricator/1]
+    method: POST
+    uri: https://truecode.trueship.com/api/project.search
+  response:
+    body: {string: '{"result":{"data":[{"id":182,"type":"PROJ","phid":"PHID-PROJ-kx4rkibaeu6rt72oupll","fields":{"name":"Reviewed","slug":"reviewed","milestone":null,"depth":0,"parent":null,"icon":{"key":"tag","name":"Tag","icon":"fa-tags"},"color":{"key":"red","name":"Red"},"dateCreated":1518712888,"dateModified":1518712888,"policy":{"view":"users","edit":"users","join":"users"},"description":null},"attachments":{}}],"maps":{"slugMap":{}},"query":{"queryKey":null},"cursor":{"limit":100,"after":null,"before":null,"order":null}},"error_code":null,"error_info":null}'}
+    headers:
+      CF-RAY: [3eda956a980b3548-LHR]
+      Cache-Control: [no-store]
+      Connection: [keep-alive]
+      Content-Type: [application/json]
+      Date: ['Thu, 15 Feb 2018 19:13:19 GMT']
+      Expect-CT: ['max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"']
+      Expires: ['Sat, 01 Jan 2000 00:00:00 GMT']
+      Server: [cloudflare]
+      Strict-Transport-Security: [max-age=0; includeSubdomains; preload]
+      Vary: [Accept-Encoding]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [Deny]
+      X-Powered-By: [PHP/5.5.9-1ubuntu4.23]
+    status: {code: 200, message: OK}
+- request:
+    body: params=%7B%22constraints%22%3A+%7B%22name%22%3A+%22Diff%22%7D%2C+%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%7D&output=json
+    headers:
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-phabricator/1]
+    method: POST
+    uri: https://truecode.trueship.com/api/project.search
+  response:
+    body: {string: '{"result":{"data":[{"id":183,"type":"PROJ","phid":"PHID-PROJ-segawqxql2j3qedl7cqc","fields":{"name":"Diff","slug":"diff","milestone":null,"depth":0,"parent":null,"icon":{"key":"tag","name":"Tag","icon":"fa-tags"},"color":{"key":"grey","name":"Grey"},"dateCreated":1518712912,"dateModified":1518712912,"policy":{"view":"users","edit":"users","join":"users"},"description":null},"attachments":{}}],"maps":{"slugMap":{}},"query":{"queryKey":null},"cursor":{"limit":100,"after":null,"before":null,"order":null}},"error_code":null,"error_info":null}'}
+    headers:
+      CF-RAY: [3eda9574880935ea-LHR]
+      Cache-Control: [no-store]
+      Connection: [keep-alive]
+      Content-Type: [application/json]
+      Date: ['Thu, 15 Feb 2018 19:13:20 GMT']
+      Expect-CT: ['max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"']
+      Expires: ['Sat, 01 Jan 2000 00:00:00 GMT']
+      Server: [cloudflare]
+      Strict-Transport-Security: [max-age=0; includeSubdomains; preload]
+      Vary: [Accept-Encoding]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [Deny]
+      X-Powered-By: [PHP/5.5.9-1ubuntu4.23]
+    status: {code: 200, message: OK}
+- request:
+    body: params=%7B%22attachments%22%3A+%7B%22projects%22%3A+true%2C+%22columns%22%3A+true%7D%2C+%22constraints%22%3A+%7B%22ids%22%3A+%5B3109%5D%7D%2C+%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%7D&output=json
+    headers:
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-phabricator/1]
+    method: POST
+    uri: https://truecode.trueship.com/api/maniphest.search
+  response:
+    body: {string: '{"result":{"data":[{"id":3109,"type":"TASK","phid":"PHID-TASK-s3scdbecgvk23b4uwsfp","fields":{"name":"Ordering
+        for Contacts resource in API v2","description":{"raw":"Contact APIv2 resource
+        doesn''t have ordering filter. We need to add it.\n\n(Notice @Vitaliy when
+        it''s ready for using)"},"authorPHID":"PHID-USER-3qd2zgbio5pi36f2rk63","ownerPHID":"PHID-USER-3qd2zgbio5pi36f2rk63","status":{"value":"open","name":"Open","color":null},"priority":{"value":90,"subpriority":0,"name":"Needs
+        Triage","color":"violet"},"points":"1.5","subtype":"default","closerPHID":null,"dateClosed":null,"spacePHID":"PHID-SPCE-f6z3tzwer76orrxduf4u","dateCreated":1516973031,"dateModified":1518707123,"policy":{"view":"users","interact":"users","edit":"users"}},"attachments":{"projects":{"projectPHIDs":["PHID-PROJ-g5ald5jcx2h3slfpene6"]},"columns":{"boards":{"PHID-PROJ-g5ald5jcx2h3slfpene6":{"columns":[{"id":917,"phid":"PHID-PCOL-nr74bpj2fhyurlslp6jp","name":"Code
+        Review"}]}}}}}],"maps":{},"query":{"queryKey":null},"cursor":{"limit":100,"after":null,"before":null,"order":null}},"error_code":null,"error_info":null}'}
+    headers:
+      CF-RAY: [3eda957a6b54357e-LHR]
+      Cache-Control: [no-store]
+      Connection: [keep-alive]
+      Content-Type: [application/json]
+      Date: ['Thu, 15 Feb 2018 19:13:22 GMT']
+      Expect-CT: ['max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"']
+      Expires: ['Sat, 01 Jan 2000 00:00:00 GMT']
+      Server: [cloudflare]
+      Strict-Transport-Security: [max-age=0; includeSubdomains; preload]
+      Vary: [Accept-Encoding]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [Deny]
+      X-Powered-By: [PHP/5.5.9-1ubuntu4.23]
+    status: {code: 200, message: OK}
+- request:
+    body: params=%7B%22types%22%3A+%5B%22task.revision%22%5D%2C+%22sourcePHIDs%22%3A+%5B%22PHID-TASK-s3scdbecgvk23b4uwsfp%22%5D%2C+%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%7D&output=json
+    headers:
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-phabricator/1]
+    method: POST
+    uri: https://truecode.trueship.com/api/edge.search
+  response:
+    body: {string: '{"result":{"data":[{"sourcePHID":"PHID-TASK-s3scdbecgvk23b4uwsfp","edgeType":"task.revision","destinationPHID":"PHID-DREV-2htctg2vymbpmdx54xd3"}],"cursor":{"limit":100,"after":null,"before":null}},"error_code":null,"error_info":null}'}
+    headers:
+      CF-RAY: [3eda958518613464-LHR]
+      Cache-Control: [no-store]
+      Connection: [keep-alive]
+      Content-Type: [application/json]
+      Date: ['Thu, 15 Feb 2018 19:13:23 GMT']
+      Expect-CT: ['max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"']
+      Expires: ['Sat, 01 Jan 2000 00:00:00 GMT']
+      Server: [cloudflare]
+      Strict-Transport-Security: [max-age=0; includeSubdomains; preload]
+      Vary: [Accept-Encoding]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [Deny]
+      X-Powered-By: [PHP/5.5.9-1ubuntu4.23]
+    status: {code: 200, message: OK}
+- request:
+    body: params=%7B%22constraints%22%3A+%7B%22phids%22%3A+%5B%22PHID-DREV-2htctg2vymbpmdx54xd3%22%5D%7D%2C+%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%7D&output=json
+    headers:
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-phabricator/1]
+    method: POST
+    uri: https://truecode.trueship.com/api/differential.revision.search
+  response:
+    body: {string: '{"result":{"data":[{"id":4351,"type":"DREV","phid":"PHID-DREV-2htctg2vymbpmdx54xd3","fields":{"title":"Add
+        Ordering filter backend for the Contact APIv2 resource","authorPHID":"PHID-USER-3qd2zgbio5pi36f2rk63","status":{"value":"needs-review","name":"Needs
+        Review","closed":false,"color.ansi":"magenta"},"repositoryPHID":"PHID-REPO-e5fmwjopt2r6b6awqonl","diffPHID":"PHID-DIFF-zlufymlayf2mbfwyjfq5","summary":"Add
+        ordering by ''first_name'', ''last_name'', ''is_company'', ''updated_at'',
+        ''created_at'' fields.","dateCreated":1517490319,"dateModified":1517492525,"policy":{"view":"users","edit":"users"}},"attachments":{}}],"maps":{},"query":{"queryKey":null},"cursor":{"limit":100,"after":null,"before":null,"order":null}},"error_code":null,"error_info":null}'}
+    headers:
+      CF-RAY: [3eda958c9d7b3542-LHR]
+      Cache-Control: [no-store]
+      Connection: [keep-alive]
+      Content-Type: [application/json]
+      Date: ['Thu, 15 Feb 2018 19:13:25 GMT']
+      Expect-CT: ['max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"']
+      Expires: ['Sat, 01 Jan 2000 00:00:00 GMT']
+      Server: [cloudflare]
+      Strict-Transport-Security: [max-age=0; includeSubdomains; preload]
+      Vary: [Accept-Encoding]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [Deny]
+      X-Powered-By: [PHP/5.5.9-1ubuntu4.23]
+    status: {code: 200, message: OK}
+- request:
+    body: params=%7B%22transactions%22%3A+%5B%7B%22value%22%3A+%5B%22PHID-PROJ-segawqxql2j3qedl7cqc%22%5D%2C+%22type%22%3A+%22projects.add%22%7D%5D%2C+%22objectIdentifier%22%3A+%22PHID-TASK-s3scdbecgvk23b4uwsfp%22%2C+%22__conduit__%22%3A+%7B%22token%22%3A+%22123%22%7D%7D&output=json
+    headers:
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-phabricator/1]
+    method: POST
+    uri: https://truecode.trueship.com/api/maniphest.edit
+  response:
+    body: {string: '{"result":{"object":{"id":"3109","phid":"PHID-TASK-s3scdbecgvk23b4uwsfp"},"transactions":[{"phid":"PHID-XACT-TASK-wm4ky2km277rnnr"}]},"error_code":null,"error_info":null}'}
+    headers:
+      CF-RAY: [3eda95950bb53590-LHR]
+      Cache-Control: [no-store]
+      Connection: [keep-alive]
+      Content-Type: [application/json]
+      Date: ['Thu, 15 Feb 2018 19:13:27 GMT']
+      Expect-CT: ['max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"']
+      Expires: ['Sat, 01 Jan 2000 00:00:00 GMT']
+      Server: [cloudflare]
+      Strict-Transport-Security: [max-age=0; includeSubdomains; preload]
+      Vary: [Accept-Encoding]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [Deny]
+      X-Powered-By: [PHP/5.5.9-1ubuntu4.23]
+    status: {code: 200, message: OK}
+version: 1

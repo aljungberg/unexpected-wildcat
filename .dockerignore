@@ -1,0 +1,4 @@
+.idea
+fixtures
+*_test.py
+*.pyc
