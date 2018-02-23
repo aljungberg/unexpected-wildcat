@@ -1,6 +1,6 @@
 import os
 
-from bottle import post, run
+from bottle import post, run, get
 import bottle
 from phabricator import Phabricator
 
@@ -17,6 +17,11 @@ def init():
     phab.update_interfaces()
 
     tag_map = task_tagger.resolve_tags(phab)
+
+
+@get('/')
+def index():
+    return "{}"
 
 
 @post('/hook')
