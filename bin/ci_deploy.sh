@@ -19,7 +19,7 @@ done
 
 [[ $PUSHING -eq 0  ]] && exit 0
 
-if [[ "$GITBRANCH" == "master" ]]; then
+if [[ "$GITBRANCH" == "production" ]]; then
     echo 'Detected production environment.'
     GOOGLE_SERVICE_ACCOUNT="$GOOGLE_SERVICE_ACCOUNT_KEY_PROD"
 else
