@@ -40,7 +40,8 @@ def on_task_update(phab, task_id=None, phid=None, tag_map=None):
 
     task = phab.maniphest.search(constraints=constraints, attachments={"columns": True, "projects": True})['data'][0]
 
-    diff_phids = [edge['destinationPHID'] for edge in phab.edge.search(sourcePHIDs=[task['phid']], types=["task.revision"])['data'] if edge['edgeType'] == "task.revision"]
+    edges = phab.edge.search(sourcePHIDs=[task['phid']], types=["task.revision"])['data']
+    diff_phids = [edge['destinationPHID'] for edge in edges if edge['edgeType'] == "task.revision"]
 
     diffs = phab.differential.revision.search(constraints={"phids": diff_phids})['data'] if diff_phids else []
     tags_counter = Counter([diff['fields']['status']['value'] for diff in diffs])
