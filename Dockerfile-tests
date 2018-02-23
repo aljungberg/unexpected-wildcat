@@ -1,0 +1,3 @@
+FROM gcr.io/rc-apps-images/unexpected-wildcat
+
+RUN pip install -r /app/requirements-test.txt
