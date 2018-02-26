@@ -1,11 +1,8 @@
-boddle==0.2.8
 bottle==0.12.13
 idna==2.6
 multidict==4.1.0
-nose==1.3.7
 phabricator==0.7.0
 PyYAML==3.12
 six==1.11.0
-vcrpy==1.11.1
 wrapt==1.10.11
 yarl==1.1.0
