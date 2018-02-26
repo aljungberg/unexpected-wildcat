@@ -1,4 +1,3 @@
 .idea
-fixtures
-*_test.py
 *.pyc
+__pycache__
